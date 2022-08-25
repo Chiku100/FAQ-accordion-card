@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+    width: 100%;
+    max-width: 1440px;
+    height: 100%;
+    min-height: 100vh;
+    background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    background-repeat: no-repeat;
+}
+
+main {
+    font-size: 12px;
+    padding: 10px;
+    font-family: 'Kumbh Sans', sans-serif;
+    width: 70%;
+    border-radius: 20px;
+    height: 10rem;
+    min-height: 500px;
+    padding: 0;
+    margin: 3rem auto;
+    display: flex;
+    place-items: center;
+    background-color: hsl(240, 5%, 91%);
+}
+
+.pics {
+    padding: 0;
+    width: 40%;
+}
+
+.faq {
+    position: relative;
+    padding: 5rem;
+    width: 60%;
+}
+
+.question {
+    font-weight: 700;
+}
+
+.active-state {
+    display: none;
+}
+footer{
+    text-align: center;
+    color: aquamarine;
+}
+
+a{text-decoration: none;
+color: rgb(255, 200, 127);}
+.invert{-moz-transform: scaleY(-1);
+    -o-transform: scaleY(-1);
+    -webkit-transform: scaleY(-1);
+    transform: scaleY(-1);
+    filter: FlipV;
+    -ms-filter: "FlipV";}
+.img-woman {
+    margin-left: 0;
+    overflow: hidden;
+    background-image: url("./images/illustration-woman-online-desktop.svg");
+    height: 25rem;
+    margin-top: 25rem;
+    background-repeat: no-repeat;
+    background-position: right;
+
+}
+
+img {
+    margin-left: 24rem;
+}
+
+.img-bg {
+    background-image: url("./images/bg-pattern-desktop.svg");
+    height: 25rem;
+    background-repeat: no-repeat;
+    width: 40rem;
+    background-size: 30rem;
+    position: absolute;
+    height: 40rem;
+    top: 5rem;
+    right: 36rem;
+}
+
+.img-pattern {
+    background-image: url("./images/illustration-box-desktop.svg");
+    height: 25rem;
+    padding: 0;
+    position: relative;
+    bottom: 15rem;
+    right: 6rem;
+    background-repeat: no-repeat;
+    width: 510%;
+}
+
+@media screen and (max-width:600px) {
+    body {
+        width: 100%;
+        max-width: 375px;
+        min-height: 600px;
+    }
+
+    main {
+        font-size: 14px;
+        text-align: center;
+        padding: 0;
+        width: 90%;
+        height: 600px;
+
+        margin: 8rem auto;
+        flex-direction: column;
+    }
+
+    .pics {
+        width: 100%;
+    }
+
+    .faq {
+        text-align: left;
+        padding: 0;
+        width: 60%;
+        margin: 0;
+        margin-top: -38rem;
+        height: 26rem;
+    }
+
+    .img-woman {
+        overflow: auto;
+        background-image: url("./images/illustration-woman-online-desktop.svg");
+        height: 30rem;
+        position: relative;
+        bottom: 7rem;
+        margin: 0;
+        background-size: 15rem;
+        background-position: top;
+
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    img {
+        margin-left: 1px;
+    }
+
+    .img-bg {
+        height: 15rem;
+        width: 20rem;
+        background-size: 15rem;
+        bottom: 70px;
+        top: 0;
+        right: 0;
+    }
+
+    .img-pattern {
+        height: 15rem;
+        padding: 0;
+        bottom: 32.5rem;
+        right: 0;
+        left: 3rem;
+        background-size: 25%;
+        width: 100%;
+    }
+}
